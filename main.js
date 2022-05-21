@@ -19,6 +19,7 @@ userInput.addEventListener('keydown', function(event){
 
 //function menambahkan item di todolist
 function addItem(){
+    //bikin variabel h1
     var h1 = document.createElement('h1');
     h1.innerHTML ='-'+ userInput.value;
 
@@ -30,6 +31,6 @@ function addItem(){
     // menekankan items di add setelah items yang lain
     allItems.insertAdjacentElement('beforeend', h1)
 
-    // ngosongin input box
+    // ngosongin input box saat selesai ngetik
     userInput.value = '';
 }
