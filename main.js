@@ -20,12 +20,20 @@ userInput.addEventListener('keydown', function(event){
 //function menambahkan item di todolist
 function addItem(){
     //bikin variabel h1
+
     var h1 = document.createElement('h1');
+    var h1Style = h1.style.textDecoration;
     h1.innerHTML ='-'+ userInput.value;
 
     //function saat h1 / items di klik
     h1.addEventListener('click', function(){
-        h1.style.textDecoration ='line-through'
+        if(h1.style.textDecoration == ''){
+            h1.style.textDecoration ='line-through'
+        } else if(h1.style.textDecoration =='line-through'){
+            h1.style.textDecoration =''
+        } else{
+            console.log('hi')
+        }
     })
 
     // menekankan items di add setelah items yang lain

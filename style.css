@@ -14,12 +14,21 @@ input{
     height: 4rem;
 
 }
+input::-webkit-input-placeholder { 
+    opacity: 0.4;
+    text-align: center;
+}
 
 #allItems{
     margin: 15px 50px 0 50px;
     font-size: 3rem;
     cursor: pointer;
 }
+h1::selection {
+    color: none;
+    background: none;
+}
+    
 
 i{
     cursor: pointer;
